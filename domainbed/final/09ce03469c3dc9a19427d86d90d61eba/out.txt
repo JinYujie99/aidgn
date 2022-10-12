@@ -1,0 +1,44 @@
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 11.3
+	CUDNN: 8200
+	NumPy: 1.21.2
+	PIL: 8.4.0
+Args:
+	algorithm: AIDGN
+	checkpoint_freq: None
+	data_dir: /home/jinyujie/mDSDI/domainbed/data/OfficeHome
+	dataset: OfficeHome
+	gpu: 0
+	holdout_fraction: 0.2
+	hparams: None
+	hparams_seed: 0
+	output_dir: /home/jinyujie/AIDGN/domainbed/final/09ce03469c3dc9a19427d86d90d61eba
+	save_model_every_checkpoint: False
+	seed: 0
+	select_M: 1
+	skip_model_save: False
+	steps: None
+	task: domain_generalization
+	test_envs: [2]
+	trial_seed: 0
+	uda_holdout_fraction: 0
+HParams:
+	PAC: False
+	batch_size: 32
+	beta: 0.3
+	class_balanced: False
+	data_augmentation: True
+	eta: 15.0
+	gamma: 0.001
+	kappa: 110
+	l_a: 10
+	lr: 2.5e-05
+	nonlinear_classifier: False
+	ratiothreshold: 1.0
+	resnet18: False
+	resnet_dropout: 0.0
+	u_a: 410
+	weight_decay: 1e-06
